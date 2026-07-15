@@ -1,0 +1,31 @@
+body{
+    background:#f5f5f5;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.hero{
+    padding:80px 0;
+    min-height:90vh;
+}
+
+.hero h1{
+    color:#111;
+}
+
+.hero p{
+    color:#555;
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.navbar-brand{
+    font-weight:bold;
+}

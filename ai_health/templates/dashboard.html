@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-5 mb-5">
+
+    <div class="card shadow-lg border-0">
+
+        <div class="card-header bg-dark text-white text-center p-4">
+
+            <h2>🤖 AI Based Health Monitoring System</h2>
+
+            <p class="mb-0">
+                Intelligent Healthcare Using Artificial Intelligence
+            </p>
+
+        </div>
+
+        <div class="card-body">
+
+            <h3 class="text-center mb-4">
+                👋 Welcome {{ request.user.username }}
+            </h3>
+
+            <div class="row">
+
+                <!-- AI Health Monitoring -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow text-center h-100">
+                        <div class="card-body">
+                            <h1>🩺</h1>
+                            <h4>AI Health Monitoring</h4>
+                            <p>Analyze your health using AI.</p>
+                            <a href="{% url 'health_monitor' %}" class="btn btn-primary">
+                                Open
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Health History -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow text-center h-100">
+                        <div class="card-body">
+                            <h1>📈</h1>
+                            <h4>Health History</h4>
+                            <p>View previous reports.</p>
+                            <a href="{% url 'history' %}" class="btn btn-success">
+                                Open
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Health Tips -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow text-center h-100">
+                        <div class="card-body">
+                            <h1>💡</h1>
+                            <h4>Health Tips</h4>
+                            <p>Daily healthy lifestyle tips.</p>
+                            <a href="{% url 'tips' %}" class="btn btn-warning">
+                                Open
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emergency Contacts -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow text-center h-100">
+                        <div class="card-body">
+                            <h1>🚑</h1>
+                            <h4>Emergency Contacts</h4>
+                            <p>Emergency helpline numbers.</p>
+                            <a href="{% url 'emergency' %}" class="btn btn-danger">
+                                Open
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Profile -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow text-center h-100">
+                        <div class="card-body">
+                            <h1>👤</h1>
+                            <h4>User Profile</h4>
+                            <p>View your account information.</p>
+                            <a href="{% url 'profile' %}" class="btn btn-info">
+                                Open
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Project -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow text-center h-100">
+                        <div class="card-body">
+                            <h1>ℹ️</h1>
+                            <h4>About Project</h4>
+                            <p>Learn about the AI Based Health Monitoring System.</p>
+                            <a href="{% url 'about' %}" class="btn btn-secondary">
+                                Open
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="alert alert-success text-center">
+                        <h5>System Status</h5>
+                        <h3>🟢 Active</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="alert alert-info text-center">
+                        <h5>AI Engine</h5>
+                        <h3>🤖 Ready</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="alert alert-warning text-center">
+                        <h5>Logged In User</h5>
+                        <h3>{{ request.user.username }}</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-4">
+
+                <a href="{% url 'logout' %}" class="btn btn-dark btn-lg">
+                    🚪 Logout
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

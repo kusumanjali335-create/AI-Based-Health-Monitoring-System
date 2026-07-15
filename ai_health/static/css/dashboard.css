@@ -1,0 +1,23 @@
+body{
+    background:#111111;
+    color:white;
+    font-family:Segoe UI;
+    text-align:center;
+    padding-top:120px;
+}
+
+h1{
+    font-size:45px;
+}
+
+h2{
+    color:#bfbfbf;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+    background:#333;
+    padding:15px 30px;
+    border-radius:10px;
+}

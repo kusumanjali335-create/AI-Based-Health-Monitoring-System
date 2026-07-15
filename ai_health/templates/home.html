@@ -1,0 +1,183 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<section class="container-fluid hero">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<span class="badge bg-dark p-3 mb-4">
+
+AI POWERED HEALTHCARE
+
+</span>
+
+<h1 class="display-2 fw-bold">
+
+Welcome to AI Based Health Monitoring System
+
+</h1>
+
+<p class="lead mt-4">
+
+Monitor your health using Artificial Intelligence.
+
+Predict diseases.
+
+Track your health.
+
+Stay healthy.
+
+</p>
+
+<div class="mt-5">
+
+<a href="/login/" class="btn btn-dark btn-lg me-3">
+
+<i class="bi bi-box-arrow-in-right"></i>
+
+Login
+
+</a>
+
+<a href="/register/" class="btn btn-outline-dark btn-lg">
+
+<i class="bi bi-person-plus-fill"></i>
+
+Register
+
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-6 text-center">
+
+<img src="{% static 'images/doctor.png' %}"
+
+class="img-fluid">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="bg-dark py-5">
+
+<div class="container">
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<div class="card bg-secondary text-white h-100">
+
+<div class="card-body">
+
+<h4>
+
+🤖 AI Prediction
+
+</h4>
+
+<p>
+
+Predict diseases using Machine Learning.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card bg-secondary text-white h-100">
+
+<div class="card-body">
+
+<h4>
+
+❤️ Health Monitoring
+
+</h4>
+
+<p>
+
+Monitor vital health parameters.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card bg-secondary text-white h-100">
+
+<div class="card-body">
+
+<h4>
+
+📄 Reports
+
+</h4>
+
+<p>
+
+Download medical reports.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card bg-secondary text-white h-100">
+
+<div class="card-body">
+
+<h4>
+
+🔒 Secure
+
+</h4>
+
+<p>
+
+All data is encrypted.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+<div class="card shadow-lg">
+
+<div class="card-header bg-info text-white text-center">
+
+<h2>👤 User Profile</h2>
+
+</div>
+
+<div class="card-body">
+
+<table class="table table-bordered">
+
+<tr>
+<th>Username</th>
+<td>{{ request.user.username }}</td>
+</tr>
+
+<tr>
+<th>Email</th>
+<td>{{ request.user.email|default:"Not Provided" }}</td>
+</tr>
+
+<tr>
+<th>Date Joined</th>
+<td>{{ request.user.date_joined }}</td>
+</tr>
+
+<tr>
+<th>Total Health Reports</th>
+<td>{{ reports }}</td>
+</tr>
+
+<tr>
+<th>Last Health Analysis</th>
+
+<td>
+
+{% if last_report %}
+
+{{ last_report.created_at }}
+
+{% else %}
+
+No Reports
+
+{% endif %}
+
+</td>
+
+</tr>
+
+</table>
+
+<div class="text-center">
+
+<a href="{% url 'dashboard' %}" class="btn btn-dark">
+
+⬅ Dashboard
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}
